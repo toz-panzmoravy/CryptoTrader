@@ -1,0 +1,96 @@
+# Indicator Manual: Crypto Futures Master (CryptoEXP)
+
+## I. Core Philosophy
+
+This indicator is not a magic crystal ball. It's a **professional pilot's dashboard**. Its purpose is not to give you a single blind "BUY" or "SELL" signal, but to provide you with a complete checklist of all critical factors.
+
+**Before every trade, scan the table from top to bottom. If the metrics contradict each other, or if you don't understand something, that in itself is a signal: "STAY OUT".**
+
+## II. Main Dashboard - Row-by-Row Description
+
+Each row in the table is a piece of the puzzle.
+
+---
+
+### **1. Main Signal & Quality**
+- **State (`IN LONG`, `IN SHORT`, `HUNTING`, `STAY OUT`):** Shows the current phase of the indicator's internal logic. `HUNTING` means a quality setup has been detected, and the system is waiting for a confirmation candle to enter.
+- **Quality (0-100):** The overall score of the setup.
+    - **70+:** A-Grade setup. High probability.
+    - **50-70:** B-Grade setup. Tradable, but be more cautious, consider a smaller position size.
+    - **<50:** Low quality. Even if a signal appears, it's better to ignore it.
+
+---
+
+### **2. Market Drivers**
+- **Momentum (`BULLISH` / `BEARISH` / `NEUTRAL`):** Shows if higher timeframes agree on the trend. `BULLISH` or `BEARISH` is a strong confirmation. `NEUTRAL` means the market is undecided.
+- **Volatility (`LOW` / `NORMAL` / `HIGH` / `EXTREME`):**
+    - `LOW`: The market is "sleeping." A sharp move might be coming.
+    - `NORMAL`: Ideal conditions for trading.
+    - `HIGH`: Increased caution is needed.
+    - `EXTREME`: Very dangerous. The price can swing wildly in both directions. Consider reducing position size or not trading at all.
+- **Funding (`Longs Pay Shorts` / `Shorts Pay Longs`):** Crucial for futures! Shows who is paying whom.
+    - `Longs Pay Shorts` (positive number): The majority is long. The market is "heavy" and tends to fall. Good for shorts.
+    - `Shorts Pay Longs` (negative number): The majority is short. Shorters are "fuel" for a rally. Good for longs.
+- **Altcoin Status (`ALTCOIN SEASON` / `BTC DOMINANCE`):**
+    - `ALTCOIN SEASON`: Energy is flowing into altcoins. An ideal time to look for long positions on them.
+    - `BTC DOMINANCE`: Energy is in Bitcoin. Altcoins are likely bleeding. Be extremely careful with longs on alts; it's a good environment for shorts.
+- **Pump & Dump (`DETECTED` / `CLEAR`):**
+    - `DETECTED`: Hands off immediately! Someone is manipulating the price. Do not trade.
+    - `CLEAR`: Normal market activity.
+- **Liq. Clusters (`CLEAR` / `1 ZONE` / `2+ ZONES`):** Shows how many liquidation clusters are near the current price.
+    - `CLEAR`: Safe.
+    - `1 ZONE`: Be aware, the price might be drawn to this zone.
+    - `2+ ZONES`: Very dangerous. Acts as a strong magnet for the price. Expect volatility.
+- **Signal Type:** Provides context for the entire setup. For example, a `MOMENTUM BREAKOUT` is a different kind of opportunity than a `FUNDING ARBITRAGE`. It helps you understand *why* the signal appeared.
+
+---
+
+### **3. Trend Analysis**
+- **Micro-Trend (`UP` / `DOWN`):** The direction of the SuperTrend. Your best friend for determining the short-term direction. In a strong trend, the price respects this line.
+- **SMC Zones (`▲ Support` / `▼ Resistance`):** The most important zones for planning your trade.
+    - **How to use:** Plan your entries when the price reacts to these levels. Place your stop loss *beyond* this zone. Target your take profit towards the *next* SMC zone.
+- **Immediate Pressure (`▲ Above EMA` / `▼ Below EMA`):** Shows who has the upper hand in the last few candles. Great for confirming an entry.
+- **Trend Strength (0-100):** How healthy and reliable is the main trend?
+    - **75+:** Strong, healthy trend. You can trust it.
+    - **50-75:** Average trend.
+    - **<50:** Weak, choppy market. The trend is unreliable. Don't trade the trend; focus on reversals instead.
+- **Trend Potential (0-100):** The trend's "fuel tank."
+    - **How to read:** Shows how much room the trend has before it hits the next obstacle (SMC zone).
+    - **How to use:** If you're entering a trade and the potential is only 20/100, don't expect a long move. If it's 80/100, you have a clear path ahead. Great for managing exits!
+
+---
+
+## III. Pullback Hunter System (Bottom Panel)
+
+This is your secret weapon for smart entries.
+
+- **Main Trend (`UPTREND (12 bars)`):** This means "The main trend is UP and has been running for 12 bars."
+- **Pullback Status (`NONE` / `HUNTING` / `READY`):**
+    - `NONE`: The trend is not yet sufficiently confirmed (has lasted for less than 10 bars).
+    - `HUNTING`: The trend is running, and the system is actively waiting for the price to start correcting.
+    - `READY`: **Key state!** The correction is deep enough. Now is the time to zoom in on the chart and look for a specific entry signal (e.g., an `E` or `H` candlestick pattern).
+- **Pullback Depth (0-100):** The quality of the correction. 70+ is ideal.
+
+---
+
+## IV. Practical Examples (How to Think)
+
+### **Scenario 1: "A-Grade" SHORT on XRP**
+1.  **Dashboard shows:** `Altcoin Status: BTC DOMINANCE`, `Trend Strength: 88/100`, `Micro-Trend: DOWN`.
+2.  **Your thought process:** "Perfect! The environment favors shorts on alts, and the trend is strong."
+3.  **Action:** You look at `Pullback Status`. It's `HUNTING`. You wait.
+4.  After a few candles, the price rallies against the trend. `Pullback Status` changes to `READY`, and `Pullback Depth` shows 75/100.
+5.  **Your thought process:** "Great, the correction is ideal."
+6.  **Action:** You zoom in. The price touches the `▼ Resistance` SMC zone. A red `E` symbol (bearish engulfing) appears. `Trend Potential` shows 90/100.
+7.  **Conclusion:** You enter a SHORT position. You place your stop loss just above the SMC zone.
+
+### **Scenario 2: Confusing Situation - "No-Go" Zone**
+1.  **Dashboard shows:** `Momentum: BULLISH`, but `Immediate Pressure: ▼ Below EMA`. `Trend Strength` is only 35/100. `Liq. Clusters` shows `3 ZONES`.
+2.  **Your thought process:** "This is chaos. Higher timeframes want to go up, but it's dropping short-term. The trend has no strength, and there's a risk of a liquidation hunt."
+3.  **Conclusion:** Hands off. You wait for the situation to clear up.
+
+### **Scenario 3: Managing a Trade with Trend Potential**
+1.  **Situation:** You are in a profitable long trade. You entered when `Trend Potential` was 85/100.
+2.  **Action:** You watch as `Trend Potential` decreases with each candle... 70... 55... 40...
+3.  **Your thought process:** "We're approaching some resistance; the trend is running out of steam."
+4.  **Conclusion:** Once the potential drops below 30, you start considering closing the trade or at least moving your stop loss to your entry price to protect your profits.
